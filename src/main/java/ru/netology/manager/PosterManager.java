@@ -8,7 +8,9 @@ public class PosterManager {
     private int limitPosterItem = 10;
 
     public PosterManager() {
-    }    public PosterManager(int limitPosterItem) {
+    }
+
+    public PosterManager(int limitPosterItem) {
         this.limitPosterItem = limitPosterItem;
     }
 
@@ -26,9 +28,8 @@ public class PosterManager {
         PosterItem[] result;
         if (items.length > limitPosterItem) {
             result = new PosterItem[limitPosterItem];
-        }
-        else {
-            result = new PosterItem [items.length];
+        } else {
+            result = new PosterItem[items.length];
         }
         for (int i = 0; i < result.length; i++) {
             int index = items.length - i - 1;
